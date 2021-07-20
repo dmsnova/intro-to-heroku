@@ -1,27 +1,40 @@
-<ion-navbar primary *navbar>
-    <button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-    </button>
-<ion-title>Welcome to DreamHouse Realty</ion-title>
-</ion-navbar>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
 
-<ion-content class="welcome">
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-    <ion-slides pager loop="false" autoplay="false" index="1">
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
 
-        <ion-slide style="background-image: url('images/slide_properties.jpg')">
-            <p>Your dream house is just a few taps away! Select Properties in the menu to start your search.</p>
-        </ion-slide>
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-        <ion-slide style="background-image: url('images/slide_brokers.jpg')">
-            <p>Select Brokers in the menu to connect with the best brokers in the business in a whole new way!</p>
-        </ion-slide>
+<input type=hidden name="oid" value="00D5g0000071Nym">
+<input type=hidden name="retURL" value="https://successmotorstest.herokuapp.com/">
 
-        <ion-slide style="background-image: url('images/slide_favorites.jpg')">
-            <img src="images/favorite.png"/>
-            <p>Keep track of your favorites and get notified in real time when important events happen.</p>
-        </ion-slide>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail" value="dmsnova@gmail.com">       -->
+<!--  ----------------------------------------------------------------------  -->
 
-    </ion-slides>
+<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
 
-</ion-content>
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+Product:<input  id="00N5g00000JXy6O" maxlength="25" name="00N5g00000JXy6O" size="20" type="text" /><br>
+
+<input type="submit" name="submit">
+
+</form>
+
